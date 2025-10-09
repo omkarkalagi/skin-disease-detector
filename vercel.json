@@ -12,9 +12,10 @@
     "npm_config_runtime": "node",
     "npm_config_cache": "/tmp/.npm"
   },
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs22.x"
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  }
+  ]
 }
