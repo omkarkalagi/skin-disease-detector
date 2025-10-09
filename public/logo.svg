@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#667eea" stroke="#5a67d8" stroke-width="2"/>
+
+  <!-- Camera Body -->
+  <rect x="20" y="24" width="24" height="20" rx="4" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Camera Lens -->
+  <circle cx="32" cy="34" r="8" fill="#4a5568" stroke="#2d3748" stroke-width="1"/>
+  <circle cx="32" cy="34" r="5" fill="#667eea" opacity="0.8"/>
+  <circle cx="32" cy="34" r="2" fill="#9f7aea"/>
+
+  <!-- Lens Reflection -->
+  <ellipse cx="35" cy="31" rx="1.5" ry="1" fill="white" opacity="0.6"/>
+
+  <!-- Camera Details -->
+  <rect x="26" y="46" width="12" height="2" rx="1" fill="#e2e8f0"/>
+  <circle cx="28" cy="47" r="0.5" fill="#cbd5e0"/>
+  <circle cx="36" cy="47" r="0.5" fill="#cbd5e0"/>
+
+  <!-- Skin Analysis Rays -->
+  <g opacity="0.7">
+    <line x1="32" y1="8" x2="32" y2="12" stroke="#9f7aea" stroke-width="2" stroke-linecap="round"/>
+    <line x1="52" y1="32" x2="48" y2="32" stroke="#9f7aea" stroke-width="2" stroke-linecap="round"/>
+    <line x1="32" y1="56" x2="32" y2="52" stroke="#9f7aea" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="32" x2="16" y2="32" stroke="#9f7aea" stroke-width="2" stroke-linecap="round"/>
+    <line x1="18.34" y1="18.34" x2="20.46" y2="20.46" stroke="#9f7aea" stroke-width="2" stroke-linecap="round"/>
+    <line x1="45.66" y1="45.66" x2="43.54" y2="43.54" stroke="#9f7aea" stroke-width="2" stroke-linecap="round"/>
+    <line x1="45.66" y1="18.34" x2="43.54" y2="20.46" stroke="#9f7aea" stroke-width="2" stroke-linecap="round"/>
+    <line x1="18.34" y1="45.66" x2="20.46" y2="43.54" stroke="#9f7aea" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- AI Brain Icon -->
+  <g transform="translate(45, 8)" opacity="0.8">
+    <path d="M3 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4z" fill="#9f7aea"/>
+    <path d="M7 8c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2z" fill="#667eea"/>
+    <path d="M11 8c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4z" fill="#764ba2"/>
+  </g>
+
+  <!-- Text -->
+  <text x="8" y="58" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">
+    SkinSight AI
+  </text>
+</svg>

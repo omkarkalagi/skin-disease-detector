@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+
+  <!-- Upload Area -->
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="#edf2f7" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="10,5"/>
+
+  <!-- Upload Icon -->
+  <g transform="translate(200, 125)">
+    <path d="M32 16L16 32L32 48" stroke="#667eea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M16 32H48" stroke="#667eea" stroke-width="3" stroke-linecap="round"/>
+    <path d="M48 16V48" stroke="#667eea" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Progress Bar -->
+  <rect x="100" y="200" width="200" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="100" y="200" width="140" height="8" rx="4" fill="#667eea"/>
+
+  <!-- File Preview -->
+  <rect x="320" y="80" width="60" height="60" rx="4" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="325" y="85" width="50" height="40" rx="2" fill="#667eea" opacity="0.3"/>
+
+  <!-- Analysis Results -->
+  <rect x="50" y="270" width="300" height="20" rx="10" fill="#48bb78" opacity="0.8"/>
+  <text x="200" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+    Analysis Complete - 95% Accuracy
+  </text>
+</svg>

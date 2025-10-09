@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+
+  <!-- Camera Interface -->
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+
+  <!-- Camera Lens -->
+  <circle cx="200" cy="150" r="60" fill="#1a202c" stroke="#4a5568" stroke-width="3"/>
+  <circle cx="200" cy="150" r="45" fill="#667eea" opacity="0.8"/>
+  <circle cx="200" cy="150" r="25" fill="#9f7aea"/>
+
+  <!-- Lens Reflection -->
+  <ellipse cx="215" cy="135" rx="8" ry="5" fill="white" opacity="0.6"/>
+
+  <!-- Viewfinder -->
+  <rect x="320" y="80" width="60" height="60" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <circle cx="350" cy="110" r="15" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+
+  <!-- Analysis Overlay -->
+  <rect x="180" y="220" width="40" height="20" rx="10" fill="#48bb78" opacity="0.8"/>
+  <text x="200" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+    LIVE
+  </text>
+
+  <!-- Detection Points -->
+  <circle cx="150" cy="120" r="3" fill="#f56565"/>
+  <circle cx="250" cy="180" r="3" fill="#f56565"/>
+  <circle cx="180" cy="200" r="3" fill="#f56565"/>
+
+  <!-- Analysis Lines -->
+  <line x1="150" y1="120" x2="180" y2="140" stroke="#f56565" stroke-width="2" opacity="0.7"/>
+  <line x1="250" y1="180" x2="220" y2="160" stroke="#f56565" stroke-width="2" opacity="0.7"/>
+</svg>

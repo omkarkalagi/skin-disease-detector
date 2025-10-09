@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <ellipse cx="200" cy="150" rx="50" ry="30" fill="#ffcc99" stroke="#ffa366" stroke-width="1"/>
+  <path d="M150 140 Q200 130 220 150 Q200 170 150 160 Z" fill="#ff8c42" opacity="0.7"/>
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2d3748">Eczema</text>
+</svg>
