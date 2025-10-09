@@ -23,7 +23,7 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  ListItemSecondary,
+  ListItemSecondaryAction,
   Divider,
   Paper,
   Badge,
@@ -476,14 +476,13 @@ const CommunityForumPage: React.FC = () => {
       </DialogActions>
     </Dialog>
   );
-
   const renderPostDetails = () => (
     <Dialog
       open={!!selectedPost}
       onClose={() => setSelectedPost(null)}
       maxWidth="md"
       fullWidth
-      maxHeight="90vh"
+      PaperProps={{ sx: { maxHeight: '90vh' } }}
     >
       {selectedPost && (
         <>
@@ -737,28 +736,38 @@ const CommunityForumPage: React.FC = () => {
 
           {/* Posts List */}
           <AnimatePresence>
-            {sortedPosts.length === 0 ? (
-              <Card>
-                <CardContent sx={{ textAlign: 'center', py: 8 }}>
-                  <GroupIcon sx={{ fontSize: 80, color: 'text.secondary', mb: 2 }} />
-                  <Typography variant="h5" color="text.secondary" gutterBottom>
-                    No posts found
-                  </Typography>
-                  <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-                    Be the first to start a conversation in this category
-                  </Typography>
-                  <Button
-                    variant="contained"
-                    startIcon={<AddIcon />}
-                    onClick={() => setShowNewPostDialog(true)}
-                  >
-                    Create First Post
-                  </Button>
-                </CardContent>
-              </Card>
-            ) : (
-              sortedPosts.map(renderPostCard)
-            )}
+            <motion.div
+              key={sortedPosts.length === 0 ? 'empty' : 'posts'}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+            >
+              {sortedPosts.length === 0 ? (
+                <Card>
+                  <CardContent sx={{ textAlign: 'center', py: 8 }}>
+                    <GroupIcon sx={{ fontSize: 80, color: 'text.secondary', mb: 2 }} />
+                    <Typography variant="h5" color="text.secondary" gutterBottom>
+                      No posts found
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
+                      Be the first to start a conversation in this category
+                    </Typography>
+                    <Button
+                      variant="contained"
+                      startIcon={<AddIcon />}
+                      onClick={() => setShowNewPostDialog(true)}
+                    >
+                      Create First Post
+                    </Button>
+                  </CardContent>
+                </Card>
+              ) : (
+                <div>
+                  {sortedPosts.map(renderPostCard)}
+                </div>
+              )}
+            </motion.div>
           </AnimatePresence>
         </Grid>
       </Grid>

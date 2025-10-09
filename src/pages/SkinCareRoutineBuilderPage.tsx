@@ -22,7 +22,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  ListItemSecondary,
+  ListItemSecondaryAction,
   Divider,
   Alert,
   AlertTitle,
@@ -657,24 +657,31 @@ const SkinCareRoutineBuilderPage: React.FC = () => {
       </Card>
 
       {/* Step Content */}
-      <Card>
-        <CardContent sx={{ minHeight: 400 }}>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeStep}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.3 }}
-            >
-              {activeStep === 0 && renderSkinAssessment()}
-              {activeStep === 1 && renderProductSelection()}
-              {activeStep === 2 && renderRoutineBuilding()}
-              {activeStep === 3 && renderReviewAndSave()}
-            </motion.div>
-          </AnimatePresence>
-        </CardContent>
-      </Card>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Card>
+          <CardContent sx={{ minHeight: 400 }}>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeStep}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                {activeStep === 0 && renderSkinAssessment()}
+                {activeStep === 1 && renderProductSelection()}
+                {activeStep === 2 && renderRoutineBuilding()}
+                {activeStep === 3 && renderReviewAndSave()}
+              </motion.div>
+            </AnimatePresence>
+          </CardContent>
+        </Card>
+      </motion.div>
 
       {/* Navigation */}
       <Box display="flex" justifyContent="space-between" mt={3}>

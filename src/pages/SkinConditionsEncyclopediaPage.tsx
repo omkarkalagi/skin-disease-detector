@@ -502,7 +502,7 @@ const SkinConditionsEncyclopediaPage = () => {
                       Common Symptoms:
                     </Typography>
                     <List>
-                      {selectedCondition.symptoms.map((symptom, index) => (
+                      {selectedCondition.symptoms.map((symptom: string, index: number) => (
                         <ListItem key={index} sx={{ px: 0 }}>
                           <ListItemIcon>
                             <InfoIcon color="primary" fontSize="small" />
@@ -518,7 +518,7 @@ const SkinConditionsEncyclopediaPage = () => {
                       Possible Causes:
                     </Typography>
                     <List>
-                      {selectedCondition.causes.map((cause, index) => (
+                      {selectedCondition.causes.map((cause: string, index: number) => (
                         <ListItem key={index} sx={{ px: 0 }}>
                           <ListItemIcon>
                             <WarningIcon color="warning" fontSize="small" />
@@ -534,7 +534,7 @@ const SkinConditionsEncyclopediaPage = () => {
                       Treatment Options:
                     </Typography>
                     <List>
-                      {selectedCondition.treatments.map((treatment, index) => (
+                      {selectedCondition.treatments.map((treatment: string, index: number) => (
                         <ListItem key={index} sx={{ px: 0 }}>
                           <ListItemIcon>
                             <TreatmentIcon color="success" fontSize="small" />
@@ -550,7 +550,7 @@ const SkinConditionsEncyclopediaPage = () => {
                       Prevention Strategies:
                     </Typography>
                     <List>
-                      {selectedCondition.prevention.map((prevention, index) => (
+                      {selectedCondition.prevention.map((prevention: string, index: number) => (
                         <ListItem key={index} sx={{ px: 0 }}>
                           <ListItemIcon>
                             <CheckIcon color="success" fontSize="small" />

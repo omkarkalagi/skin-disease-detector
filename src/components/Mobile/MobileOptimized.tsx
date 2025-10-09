@@ -315,12 +315,4 @@ export const MobileButton = ({
   );
 };
 
-// Export all components
-export {
-  MobileNavigation,
-  MobileOptimizedCard,
-  MobileHeroSection,
-  ResponsiveGrid,
-  MobileSpacing,
-  MobileButton,
-};
+// Mobile Optimized Components - All components are individually exported above

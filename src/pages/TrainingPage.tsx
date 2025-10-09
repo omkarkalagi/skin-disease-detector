@@ -37,7 +37,7 @@ import {
   Error as ErrorIcon,
   Info as InfoIcon,
   Medication as MedicationIcon,
-  HomeRemedy as RemedyIcon,
+  Home as HomeIcon,
 } from '@mui/icons-material';
 import { Line, Doughnut } from 'react-chartjs-2';
 import {
@@ -259,7 +259,9 @@ const TrainingPage = () => {
                   fullWidth
                   label="Learning Rate"
                   type="number"
-                  step="0.001"
+                  inputProps={{
+                    step: "0.001"
+                  }}
                   value={trainingConfig.learningRate}
                   onChange={(e) => handleConfigChange('learningRate', parseFloat(e.target.value))}
                   sx={{ mb: 2 }}
