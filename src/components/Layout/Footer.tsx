@@ -20,15 +20,29 @@ const Footer = () => {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
+            flexDirection: { xs: 'column', md: 'row' },
             justifyContent: 'space-between',
-            alignItems: 'center',
+            alignItems: 'flex-start',
+            gap: 3
           }}
         >
-          <Typography variant="body1" color="text.secondary">
-            © {new Date().getFullYear()} SkinSight AI. All rights reserved.
-          </Typography>
-          <Box sx={{ display: 'flex', gap: 2, mt: { xs: 2, sm: 0 } }}>
+          <Box>
+            <Typography variant="body1" color="text.secondary">
+              © {new Date().getFullYear()} SkinSight AI. Transforming dermatology through artificial intelligence.
+            </Typography>
+            <Box sx={{ mt: 2 }}>
+              <Typography variant="body2" color="text.secondary">
+                📧 Email: omkardigambar4@gmail.com
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                📞 Phone: +91 7624828106 SKIN-HELP
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                📍 Bangalore, Karnataka, INDIA
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{ display: 'flex', gap: 2, flexDirection: { xs: 'column', sm: 'row' } }}>
             <Link 
               component={RouterLink} 
               to="/privacy" 
@@ -55,7 +69,7 @@ const Footer = () => {
             </Link>
           </Box>
         </Box>
-        <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 2 }}>
+        <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 3 }}>
           This application is for educational purposes only and is not a substitute for professional medical advice.
         </Typography>
       </Container>
