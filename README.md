@@ -287,5 +287,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ from Kalagi Group of Companies**
+**Built with ❤️ from Kalagi Group of Companies.**
 **Designed By Omkar Kalagi**
