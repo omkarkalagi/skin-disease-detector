@@ -287,4 +287,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ for better skin health worldwide**
+**Built with ❤️ from Kalagi Group of Companies**
+**Designed By Omkar Kalagi**
